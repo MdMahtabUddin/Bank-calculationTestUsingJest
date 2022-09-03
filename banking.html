@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome to Banking</h1>
+    <header>
+        <h1 class="text-5xl font-bold text-center text-green-400 mt-10" >welcome to Banking</h1>
+
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section>
+            <div class="grid grid-cols-3 gap-4  text-white mt-8" >
+                <div id="deposite-input" class="bg-sky-700 p-8 rouded" >
+                    <h3>Deposite</h3>
+                    <h4>$$</h4>
+                </div>
+                <div id="withdraw-input" class="bg-red-700 p-8 rouded" >
+                    <h3>Withdraw</h3>
+                    <h4>$$</h4>
+                </div>
+                <div id="total-balance" class="bg-lime-700 p-8 rouded" >
+                    <h3>Balance</h3>
+                    <h4>$$</h4>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- deposite & Withdraw -->
+
+        <div class="grid grid-cols-3 gap-6 mt-8">
+            <div class="bg-lime-700 p-8 rouded" >
+                <h3 class="text-white">Please Deposite</h3>
+                
+                <input id="user-email" class="w-3/2 mx-auto mt-8 border-double outline-dotted	 border-amber-400 block" type="text" placeholder="Please Deposite">
+                <button id="deposite-btn" class="bg-orange-400	text-white">Deposite</button>
+
+            </div>
+            <div class="bg-lime-700 p-8 rouded" >
+                <h3 class="text-white">Please Withdraw</h3>
+                
+                <input id="user-email" class="w-3/2 mx-auto mt-8 border-double outline-dotted	 border-amber-400 block" type="text" placeholder="Please Deposite">
+                <button id="withdraw-btn" class="bg-orange-400 text-white">Withdrw</button>
+
+            </div>
+        </div>
+    </main>
 </body>
 </html>
