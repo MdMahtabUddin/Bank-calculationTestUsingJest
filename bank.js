@@ -1,19 +1,8 @@
-// PH -26.3 Add event listener navigate to another page
+// PH 26-6 Get User deposit and set deposit total value
+// handle deposite button handle 
+document.getElementById('deposite-btn').addEventListener('click',function(){
+    // console.log('hello')
 
-document.getElementById('submit-btn').addEventListener( 'click', function(){
-    // addevent to emaail
-    const emailfield=document.getElementById('user-email');
-    const userEmail = emailfield.value;
-    // add event to passard 
-    const passwardField =document.getElementById('user-passward');
-    const userPassward =passwardField.value;
-    // set email & passward condition 
-    if(userEmail =='mahtab@gmail.com' && userPassward == 'secret'){
-        console.log('valid user');
-
-        // navigate another page 
-        window.location.href ='banking.html';
-    }
-
-
+    const depositeAmount =depositeInput.value;
+    console.log(depositeAmount)
 })
