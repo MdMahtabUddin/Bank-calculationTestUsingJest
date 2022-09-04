@@ -3,6 +3,11 @@
 document.getElementById('deposite-btn').addEventListener('click',function(){
     // console.log('hello')
 
-    const depositeAmount =depositeInput.value;
-    console.log(depositeAmount)
+    const deposite =depositeInput.value;
+    // console.log(deposite)
+    const depositeAmount = document.getElementById('deposite-total');
+    depositeAmount.innerText =deposite;
+
+    // clear deposite input field 
+    depositeInput.value ='';
 })
